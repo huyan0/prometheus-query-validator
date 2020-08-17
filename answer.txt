@@ -1,0 +1,1 @@
+counter, promrwexample_otlp_counter_total, {Key1:Value1,}, [10],
