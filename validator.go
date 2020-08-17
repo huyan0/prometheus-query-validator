@@ -107,8 +107,8 @@ func (v *validator) validate(filePath string) {
 			matcher += "}"
 			query := strings.Trim(params[1], " ") + strings.Trim(matcher, " ")
 			v.loadQuery(query)
-			matrix := v.values[query]
-			v.writeOne(params[0], matrix)
+
+			v.writeOne(params[0], query)
 		}
 		break
 	}
@@ -182,7 +182,8 @@ func (v *validator) loadQuery(query string) {
 	}
 }
 
-func (v *validator) writeOne(kind string, m []*model.SampleStream) {
+func (v *validator) writeOne(kind string, query string) {
+	m := v.values[query]
 	one := m[0]
 	query := one.Metric.String()
 	qElements := strings.Split(query, "{")
@@ -198,7 +199,7 @@ func (v *validator) writeOne(kind string, m []*model.SampleStream) {
 	value := one.Values[0].String()
 	valElements := strings.Split(value, " ")
 	output := kind + ", " + qElements[0] + ", "+matcher+ ", ["+  valElements[0] + "],"
-	m = m[1:]
+	v.values[query] = m[1:]
 	log.Println(output)
 	v.out.WriteString(output+"\n")
 }
