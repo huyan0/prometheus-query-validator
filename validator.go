@@ -198,6 +198,7 @@ func (v *validator) writeOne(kind string, m []*model.SampleStream) {
 	value := one.Values[0].String()
 	valElements := strings.Split(value, " ")
 	output := kind + ", " + qElements[0] + ", "+matcher+ ", ["+  valElements[0] + "],"
+	m = m[1:]
 	log.Println(output)
 	v.out.WriteString(output+"\n")
 }

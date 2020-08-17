@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbf5c476-c232-4eae-b9b4-839fd9287eb3" name="Default Changelist" comment="" />
+    <list default="true" id="cbf5c476-c232-4eae-b9b4-839fd9287eb3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator.go" beforeDir="false" afterPath="$PROJECT_DIR$/validator.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +22,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1g3F3a4mbYQLB5ccPo20STQq0lj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -52,7 +56,7 @@
       <workItem from="1597348323930" duration="1644000" />
       <workItem from="1597439080689" duration="2645000" />
       <workItem from="1597667088042" duration="10617000" />
-      <workItem from="1597678556105" duration="10276000" />
+      <workItem from="1597678556105" duration="11189000" />
     </task>
     <servers />
   </component>
